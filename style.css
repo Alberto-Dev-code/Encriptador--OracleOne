@@ -95,7 +95,7 @@ h6{
     font-size: .75rem;
 }
 
-.btn-copiar{
+/* .btn-copiar{
     background-color: var(--color-btnDesencriptar);
     border: 1px solid var(--color-letras);
     border-radius: 24px;
@@ -108,6 +108,27 @@ h6{
     visibility: hidden;
     text-align: center;
     line-height: 18px;
+    bottom: 2;
+    left: 0;
+    padding: 24px;
+} */
+
+.btn-copiar {
+    background-color: var(--color-btnDesencriptar);
+    border: 1px solid var(--color-letras);
+    border-radius: 24px;
+    color: var(--color-letras);
+    cursor: pointer;
+    height: 67px;
+    width: 224px;
+    position: absolute;
+    visibility: hidden; /* Cambiado para que sea visible */
+    text-align: center;
+    line-height: 18px;
+    bottom: 70px; /* Asegúrate de tener unidades de medida */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar correctamente */
+   
 }
 
 .tarjeta1{
@@ -116,10 +137,24 @@ h6{
 }
 /*En esta seccion vamos a darle estilos a la tarjeta del lado derecho*/
 
-.tarjeta2{
-    /*margin-top:;/*Revisar por que usamos -70*/
-    width: 300px; /*Este antes tenia un valor de 350px*/
-    height: auto; /*Este antes tenia un valor 625px*/
+/* .tarjeta2{
+    width: 300px; 
+    height: auto; 
+    background-color: var(--color-blanco);
+    box-shadow: 10px 24px 32px -8px var(--color-informacion);
+    border-radius: 32px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 40px;
+} */
+
+.tarjeta2 {
+    width: 300px;
+    height: auto;
     background-color: var(--color-blanco);
     box-shadow: 10px 24px 32px -8px var(--color-informacion);
     border-radius: 32px;

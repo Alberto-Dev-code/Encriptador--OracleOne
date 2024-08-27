@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challengue One Encriptador </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/assets/Logo.png" alt="" class="logo">
+    </header>
+
+    <main>
+        <section class="tarjeta1">
+            <textarea class="TextoEncriptado" placeholder="Ingrese el texto aquí" rows="10" cols="50"></textarea>
+                <div class="aviso">
+                    <img src="assets/aviso.svg" alt="aviso">
+                    <h6 class="aviso_txt">Solo letras minúsculas y sin acentos</h6>
+                </div>
+            <div class="botones">
+                <button type="submit" class="btn-Encriptar">Encriptar</button>
+                <button type="submit"  class="btn-Desencriptar">Desencriptar</button>
+            </div> <!--fin de botones -->    
+        </section> <!--final secttion tarjeta1-->
+
+        <section class="tarjeta2">
+            <div class="tarjeta_contenedor">
+                <img src="assets/Muñeco.png" alt="img" class="img-mune">
+                <p class="texto_uno">Ningún mensaje fue encontrado</p>
+                <p class="texto_dos">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea cols="20" rows="10" class="TextoDesencriptado" readonly></textarea>  <!--Area donde se va mostrar el texto Desencriptado-->
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section> <!--Final de section tarjeta 2-->
+
+        <script src="JavaScript.js"> </script>
+
+    </main>
+    <footer>
+        <p class="Copyright">&copy;Copyright 2024  - Encriptador de Texto - Desarrollado por Alberto Júarez</p>
+    </footer>
+</body>
+</html>
